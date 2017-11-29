@@ -1,0 +1,57 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<!-- Relative path becomes this when deployed to the webview -->
+	<img src="assets/imgs/logo1.png" alt="Logo" class="logo">
+
+	<!-- NOW A COMPONENT -->
+	<!-- <ion-card>
+		<ion-card-content>
+
+			<ion-item>
+				<ion-label floating> Email Address </ion-label>
+				<ion-input type="text"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating> Password </ion-label>
+				<ion-input type="password"></ion-input>
+			</ion-item>
+
+		</ion-card-content>
+
+		<ion-row>
+
+			<div>
+				<button ion-button 
+					(click)="navToPage('RegisterPage')" 
+					color="secondary"> 
+
+					Register 
+				</button>
+				<button ion-button (click)= "navToPage('TabsPage')"> 
+					Login 
+				</button>
+			</div>
+
+		</ion-row>
+		
+	</ion-card> -->
+
+	<login-form (loginStatus)="login($event)"></login-form>
+
+</ion-content>
